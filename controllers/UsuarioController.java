@@ -21,29 +21,29 @@ public class UsuarioController {
         return usuario;
     }
 
-    @RequestMapping(value = "usuario")
-    public List<Usuario> getUsuario(@PathVariable Long id){
+    @RequestMapping(value = "usuarios")
+    public List<Usuario> getUsuarios(){
         List<Usuario> usuarios = new ArrayList<>();
         Usuario usuario = new Usuario();
-        usuario.setId(id);
+        usuario.setId(1L);
         usuario.setNombre("Sebastián");
         usuario.setApellido("Laos");
         usuario.setTelefono("999999");
-        usuario.setEmail("sebastianlaos2b@gmail.com");
+        usuario.setEmail("sebaslade@gmail.com");
 
         Usuario usuario2 = new Usuario();
-        usuario2.setId(id);
+        usuario2.setId(2L);
         usuario2.setNombre("Matias");
         usuario2.setApellido("Delgado");
         usuario2.setTelefono("999999");
         usuario2.setEmail("matiasdelgado@gmail.com");
 
         Usuario usuario3 = new Usuario();
-        usuario3.setId(id);
-        usuario3.setNombre("Sebastián");
-        usuario3.setApellido("Laos");
+        usuario3.setId(3L);
+        usuario3.setNombre("Ben");
+        usuario3.setApellido("Ten");
         usuario3.setTelefono("999999");
-        usuario3.setEmail("sebastianlaos2b@gmail.com");
+        usuario3.setEmail("xdgagag@gmail.com");
 
         usuarios.add(usuario);
         usuarios.add(usuario2);
